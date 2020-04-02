@@ -1,6 +1,7 @@
 # Real time ROCK PAPER SCISSORS GAME
 Hey guys this is my first project using OpenCV.It is basically a game of rock,paper,scissors against a computer.I first started with collecting images with rock,paper,scissors to train my model and luckly I found a dataset of 2500 images with separte training and testing images of rock,paper and scissors then I started cleaning my data and preprocessing all the images into numpy array of pixel values once that was done then I started with training the model : 
-Model: "sequential_1"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param   
 =================================================================
 conv2d_1 (Conv2D)            (None, 256, 256, 32)      896       
 _________________________________________________________________
