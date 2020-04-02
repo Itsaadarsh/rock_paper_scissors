@@ -1,2 +1,2 @@
-# rock_paper_scissors
-Real time ROCK PAPER SCISSORS using OpenCV and Deep learning
+# Real time ROCK PAPER SCISSORS GAME
+Hey guys
