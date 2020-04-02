@@ -1,2 +1,2 @@
 # Real time ROCK PAPER SCISSORS GAME
-Hey guys
+Hey guys this is my first project using OpenCV.It is basically a game of rock,paper,scissors against a computer.I first started with collecting images with rock,paper,scissors to train my model and luckly I found a dataset of 2500 images with separte training and testing images of rock,paper and scissors then I started clean my data and preprocessing all the images in the dataset once that was done then 
