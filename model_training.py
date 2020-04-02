@@ -1,3 +1,7 @@
+'''
+DONE BY - AADARSH.S
+IG - @aadarshcodes
+'''
 import os
 import cv2
 from keras.models import Sequential
