@@ -12,15 +12,6 @@ label = {0: "rock", 1: "paper",2: "scissors",3: "none"}
 model = load_model("finalmodel.h5")
 move = None
 
-def label_func(val):
-    return label[val]
-
-def model_pred(img):
-    pred = model.predict(np.array([img]))
-    move_code = np.argmax(pred[0])
-    user_move_name = label_func(move_code)
-    return user_move_name
-
 def logic_func(player_m, com_m):
     if player_m == "paper":
         if com_m == "rock":
@@ -40,6 +31,15 @@ def logic_func(player_m, com_m):
     if player_m == com_m:
         return "DRAW"
 
+def label_func(val):
+    return label[val]
+
+def model_pred(img):
+    pred = model.predict(np.array([img]))
+    move_code = np.argmax(pred[0])
+    user_move_name = label_func(move_code)
+    return user_move_name
+
 cap = cv2.VideoCapture(0)
 while True:
     ret,f = cap.read()
@@ -57,17 +57,16 @@ while True:
             com_label = random.choice(rps)
             result = logic_func(player_move, com_label)
     move = player_move
+    if com_label != None:
+        icon = cv2.imread("Computer/{}.png".format(com_label))
+        icon = cv2.resize(icon,(300,300))
+        f[100:400,650:950] = icon
     cv2.putText(f, "PLAYER: " + player_move,
                 (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 1.2, (255, 0, 0), 3, cv2.LINE_AA)
     cv2.putText(f, "AI: " + com_label,
                 (700, 50), cv2.FONT_HERSHEY_SIMPLEX, 1.2, (255, 0, 0), 3, cv2.LINE_AA)
     cv2.putText(f, "result: " + result,
-                (300, 700), cv2.FONT_HERSHEY_SIMPLEX, 2, (255, 0, 0), 4, cv2.LINE_AA)
-    
-    if com_label != None:
-        icon = cv2.imread("Computer/{}.png".format(com_label))
-        icon = cv2.resize(icon,(300,300))
-        f[100:400,650:950] = icon
+                (300, 700), cv2.FONT_HERSHEY_SIMPLEX, 2, (255, 0, 0), 4, cv2.LINE_AA)    
     cv2.imshow("Video",f)
     k = cv2.waitKey(2)
     if k == 27 or k == ord('q'):
