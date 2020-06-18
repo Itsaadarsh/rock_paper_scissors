@@ -8,7 +8,7 @@ Then I started with the game file in which I have used OpenCV to read my webcam,
 If you guys wanna try it just download the finalmodel.h5 file and run rps.py file on your system.
 # THANKYOU
 # SUPPORT AND FEEDBACKS
-INSTAGRAM - @aadarshcodes
+INSTAGRAM - @aadarshcodes  
 EMAIL - aadarsh.s2019@vitbhopal.ac.in / saadarsh362@gmail.com
 
 
