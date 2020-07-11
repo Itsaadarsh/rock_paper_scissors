@@ -7,9 +7,9 @@ Once the model was trained it gave me around (97% accuracy) which was really sho
 Then I started with the game file in which I have used OpenCV to read my webcam,draw bounding box to read my hand movements and basically put all my code together and start predicting the real time frames of my hand movement and predict whether its a Rock or a Paper or a Scissor and match it with the computers move and give us the results.
 If you guys wanna try it just download the finalmodel.h5 file and run rps.py file on your system.  
 # SUPPORT AND FEEDBACKS
-[LinkedIN](https://www.linkedin.com/in/itsaadarsh/ "Linkedin") - Aadarsh Chauhan (itsaadarsh)  
-[Twitter](https://www.twitter.com/itsaadarsh_ "Twitter") - itsaadarsh_  
-[Instagram](https://www.instagram.com/itsaadarsh/ "@itsaadarsh") - itsaadarsh  
-aadarsh-s@outlook.com
+* [LinkedIN](https://www.linkedin.com/in/itsaadarsh/ "Linkedin") - Aadarsh S (itsaadarsh)  
+* [Twitter](https://www.twitter.com/itsaadarsh_ "Twitter") - itsaadarsh_  
+* [Instagram](https://www.instagram.com/itsaadarsh/ "@itsaadarsh") - itsaadarsh  
+* aadarsh-s@outlook.com
 
 
